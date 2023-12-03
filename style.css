@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family:"1" ;
+    src: url(./AcidGrotesk-Regular.c9a306ef.woff2);
+}@font-face {
+    font-family: "2";
+    src: url(./HeadingNow-37Extrabold.f93aff63.woff2);
+}@font-face {
+    font-family: "3";
+    src: url(./HeadingNow-95Medium.50381214.woff2);
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #191919;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+#loader{position: absolute;
+    z-index: 9999;
+    width: 100vw;
+    height: 100vh;
+    background-color: #F93752;
+    animation-name: loader3;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(.8, -0.01, .95, 0);
+    animation-fill-mode: forwards;
+    
+}
+#loader2{position: absolute;    
+    z-index: 999;
+    font-family: "3";
+    width: 100vw;
+    height: 100vh;
+    background-color: #F93752;
+    animation-name: loader3;
+        animation-duration: 1s;
+        animation-delay: 7s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    
+}
+#loader2 #text{
+    width: 50%;
+    height: 20%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    line-height: 50px;
+    animation-name: loader2;
+        animation-duration: 4s;
+        animation-delay: 3s;
+        animation-timing-function: cubic-bezier(.44, 1.02, .95, 0);
+        animation-fill-mode: forwards;
+    
+   
+        
+}
+#loader2 h1{
+    font-weight: 500;
+    font-size: 55px;
+    color: #fff;
+}
+#loader2 h2{
+    font-weight: 500;
+    font-size: 50px;
+    color: gold;
+}
+#loader2 h3{
+    
+    font-weight: 500;
+    font-size: 15px;
+    color: #fff;
+}
+#loader2 button{
+    font-size: 10px;
+    font-family: "3";
+    padding: 20px 60px;
+    border-radius: 50px;
+    border: none;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    margin-top: 250px;
+    
+}
+#loader img{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    object-fit: contain;
+    animation-name: loader;
+        animation-duration: 2s;
+        animation-timing-function: cubic-bezier(.8, -0.01, .95, 0);
+        animation-fill-mode: forwards;
+    
+}
+@keyframes loader {
+    0%{
+        top : 50%;
+    }
+    
+    100%{
+        top: -20%;
+    }
+}
+    @keyframes loader3 {
+    0%{
+        top : 0%;
+    }
+    
+    100%{
+        top: -100%;
+    }
+}
+@keyframes loader2 {
+    0%{
+        top: 150%;
+    }
+    
+    100%{
+        top: -50%;
+    }
+}
+#page1{
+    width: 96vw;
+    height: 110vh;
+    transform: translate(2%,4%);
+    border-radius: 40px;
+    overflow: hidden;
+}
+#page1 {
+    background-image: url(https:cms.therocketpanda.com/wp-content/uploads/2022/12/6_Hora_eden_Limone-2-copy-smaller-1.png);
+    background-size: cover;
+    background-position: center;
+}
+#nav{
+    width: 94vw;
+    height: 10vh;
+    transform: translate(50px, 50px);
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    justify-content: space-between;
+}
+#nl{
+    height: 100%;
+    width: 25%;
+}
+#nm{position: absolute;
+    left: 45%;
+    height: 100%;
+        width: 15%;
+}
+#nr{text-align: center;
+    height: 100%;
+        width: 10%;
+}
+#nav button{
+    font-family: "3";
+    font-size: 14px;
+    padding: 15px 30px;
+    margin-top: 20px;
+    border-radius: 50px;
+    border: none;
+    margin-left: 20px;
+    background-color: #FFF9ED;
+}
+#nav button:nth-child(1){
+    font-size: 30px;
+    padding: 0px 25px;
+    font-weight: 500;
+    
+}
+#nm img{
+    width: 150px;
+    height: 120px;
+    object-fit: contain;object-position: center;
+}
+#lock{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    left: 95%;
+    top: 90%;
+    z-index: 9;
+}
+#lock button{
+    border: none;
+}
+#lock i{
+    border: none;
+    font-size: 50px;
+}
+#page2 {
+    width: 96vw;
+    height: 96vh;
+    overflow: hidden;
+    position: relative;
+}
+#page2 h1{
+    font-family: "3";
+    color: #FFF9ED;
+    position: absolute;
+    height: 95%;
+    width: 80%;
+    font-size: 40px;
+    left: 15%;
+    top: 30%;
+    font-weight: 600;
+}
+#page3{
+         width: 96vw;
+        height: 110vh;
+        transform: translate(2%, 4%);
+        border-radius: 40px;
+        overflow: hidden;
+        background-image: url(https:cms.therocketpanda.com/wp-content/uploads/2016/12/IG-%E2%80%93-34.png);
+        background-size: cover;
+        background-position: center;
+}
+#page4 {
+    width: 96vw;
+    height: 96vh;
+    overflow: hidden;
+    position: relative;
+}
+#page4 h1{
+    font-family: "3";
+        color: #FFF9ED;
+        position: absolute;
+        height: 95%;
+        width: 80%;
+        font-size: 40px;
+        left: 15%;
+        top: 30%;
+        font-weight: 600;
+}
+#page5{
+    width: 96vw;
+        height: 110vh;
+        transform: translate(2%, 4%);
+        border-radius: 40px;
+        overflow: hidden;
+}
+#page5 video{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+#page6{
+    width: 96vw;
+        height: 110vh;
+        transform: translate(2%, 10%);
+        background-image: url(https:cms.therocketpanda.com/wp-content/uploads/2016/12/Group-423.png);
+        background-size: contain;
+        background-position: center;
+}
+#page7 {
+    width: 96vw;
+    height: 96vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    transform: translate(4%,4%);
+    padding-top: 100px;
+    padding-left: 140px;
+    line-height: 50px;
+}
+#right7{
+    height: 100%;
+    width: 45%;
+
+}
+#left7{
+    padding-top: 90px;
+    height: 100%;
+    width: 45%;
+    
+}
+#right7 span{
+    font-family: "3";
+    font-size: 18px;
+}
+
+#page7 h2 {
+    font-family: "1";
+    color: #FFF9ED;
+    height: 95%;
+    width: 80%;
+    font-size: 35px;
+    left: 15%;
+    top: 30%;
+    font-weight: 500;
+}
+#page8 {
+    width: 96vw;
+    height: 110vh;
+    transform: translate(2%, 4%);
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+#page8 video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+#page9 {
+    width: 96vw;
+    height: 110vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    transform: translate(2%, 4%);
+    padding-top: 150px;
+}
+
+#right9 {
+    height: 100%;
+    width: 48%;
+    background-image: url(https:cms.therocketpanda.com/wp-content/uploads/2016/12/img_02.png);
+    border-radius: 50px;
+
+}
+
+#left9 {
+    padding-left: 10px;
+    border-radius: 50px;
+    padding-top: 90px;
+    height: 100%;
+    width: 48%;
+   background-image: url(https:cms.therocketpanda.com/wp-content/uploads/2016/12/img_03.png);
+}

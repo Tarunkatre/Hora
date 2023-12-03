@@ -141,10 +141,10 @@ html,body{
     border-radius: 40px;
     overflow: hidden;
 }
-#page1 {
-    background-image: url(https:cms.therocketpanda.com/wp-content/uploads/2022/12/6_Hora_eden_Limone-2-copy-smaller-1.png);
-    background-size: cover;
-    background-position: center;
+#page1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 #nav{
     width: 94vw;
